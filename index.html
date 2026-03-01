@@ -3,8 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Invitation</title>
-  <meta name="description" content="우리의 소중한 날에 초대합니다." />
+  <title>우리의 결혼식에 초대합니다</title>
+  <meta name="description" content="청첩장 확인하고 일정에 바로 추가해 주세요." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="우리의 결혼식에 초대합니다" />
+  <meta property="og:description" content="아래 버튼으로 날짜를 캘린더에 바로 저장해 주세요." />
+  <meta property="og:url" content="https://iinow.github.io/invitation/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="우리의 결혼식에 초대합니다" />
+  <meta name="twitter:description" content="청첩장 확인하고 일정에 바로 추가해 주세요." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1200&q=80" />
   <style>
     :root{
       --bg:#0f1020;
@@ -47,6 +56,9 @@
     .title{font-size:22px;margin:0 0 8px}
     .desc{color:var(--muted);line-height:1.7;margin:0}
 
+    .schedule{margin-top:18px;padding:20px;border-radius:16px;background:#ffffff0d;border:1px solid #ffffff26}
+    .schedule .when{font-size:18px;font-weight:700;margin:6px 0}
+    .schedule .where{color:var(--muted);margin:0 0 10px}
     .account{margin-top:18px;padding:20px;border-radius:16px;background:#ffffff0d;border:1px dashed #ffffff3a}
     .account .bank{font-weight:700;font-size:18px}
     .account .num{font-size:20px;letter-spacing:.02em;margin:6px 0 10px}
@@ -84,6 +96,16 @@
         <figure class="ph c"><img src="https://images.unsplash.com/photo-1501901609772-df0848060b33?auto=format&fit=crop&w=1000&q=80" alt="sample 3"><span>Sample 03</span></figure>
         <figure class="ph d"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=80" alt="sample 4"><span>Sample 04</span></figure>
         <figure class="ph e"><img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1000&q=80" alt="sample 5"><span>Sample 05</span></figure>
+      </div>
+
+      <div class="schedule">
+        <div class="bank">📅 일정 추가</div>
+        <div class="when">2026.10.10 (토) 오후 12:00</div>
+        <p class="where">예식장: 샘플 웨딩홀 (주소 입력 예정)</p>
+        <div class="actions">
+          <a class="btn secondary" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%EA%B2%B0%ED%98%BC%EC%8B%9D&dates=20261010T030000Z/20261010T050000Z&details=%EC%B2%AD%EC%B2%A9%EC%9E%A5%20%EC%9D%BC%EC%A0%95%EC%9E%85%EB%8B%88%EB%8B%A4.&location=%EC%83%98%ED%94%8C%20%EC%9B%A8%EB%94%A9%ED%99%80" target="_blank" rel="noopener">구글 캘린더에 추가</a>
+          <a class="btn secondary" href="webcal://raw.githubusercontent.com/iinow/invitation/main/wedding.ics">아이폰/맥 캘린더 추가</a>
+        </div>
       </div>
 
       <div class="account">
